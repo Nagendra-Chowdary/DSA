@@ -1,0 +1,6 @@
+ pass by value means the value passed is
+copied into the dummy variable 
+that we specified in the function declaration
+now whatever we do with the value in the function 
+will not affect the original variable
+in the main function. 

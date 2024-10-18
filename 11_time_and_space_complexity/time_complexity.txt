@@ -1,0 +1,38 @@
+Time complexity is the amount of time taken by an algorithm
+to run.
+It is a function of length of the input (mostly denoted as n)
+
+
+Why?
+->To make better algorithms
+->To compare different algorithms
+
+Given by big O notation.(a function of input length)
+
+->big O -- upper bound of time(worst case complexity)
+->thetha -- for average case complexity
+->omega -- lower bound of time(best case complexity)
+
+-> constant time = O(1)
+-> linear time = O(n)
+-> Quadratic time=O(n^2)
+-> Logarithmic time = O(log n)
+-> Cubic time = O(n^3)
+
+time complexities in increasing order
+O(1)<O(logn)<O(n)<O(nlogn)<O(n^2)<O(n^3)<O(2^n)<O(n!)
+
+for loop after a loop-->O(n+m)
+for loop inside a loop-->O(m*n)
+
+TLE means time limit exceeded .
+
+The 10^8 operation rule means that most of the modern 
+machines now can only perform 10^8 operations per second.
+
+To avoid TLE, follow the chart(in the pdf) and see the constraints
+of the problem to use the suitable algorithm. 
+
+
+Space complexity is amount of memory an algorithm takes to run 
+and it is expressed as a function of length of input.

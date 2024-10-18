@@ -1,0 +1,2 @@
+arrays contain homogenous values in contiguous 
+locations used to contain multiple values in a single variable.
