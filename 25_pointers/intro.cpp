@@ -34,4 +34,11 @@ pq++;//pq moves to next 4 bytes location (becoz it has data type integer).
 
 int **dp=&ppp;
 //this is a double pointer that stores the address of another pointer.
+
+//void pointer -- can be used to point any data type.
+//but cannot be dereferenced directly without typecasting
+void *ptrr;
+int aa=9;
+ptrr=&aa;
+cout<<*(int*)ptrr<<endl;
 }
