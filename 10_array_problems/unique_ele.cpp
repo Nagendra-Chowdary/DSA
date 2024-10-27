@@ -9,7 +9,7 @@ int uniqueElement(int arr[],int size){
     for(int i=0;i<size;i++){
       //xor of an element with same element is zero.
       //xor of an element with zero is the same element.
-      ele^=arr[i];
+      ele^=arr[i]; 
     }
     return ele;
 }
