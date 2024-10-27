@@ -5,7 +5,7 @@ using namespace std;
 // the last element is greater than the second last element.
 int checkSorted(int a[], int n)
 {
-    if (n == 1)
+    if (n == 1|| n==0)
     {
         return 1;
     }
