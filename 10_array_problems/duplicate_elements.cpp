@@ -9,7 +9,7 @@ int duplicateElement(int arr[],int size){
     // and we also know that the array contains 1 to size-1 elements
     // so we xor all elements with numbers from 1 to n-1
     //1^2^3^4^5....N-1^3 ^ 1^2^3^4...N-1 will give
-    //3(same elements will get cancelled.)
+    //3(same elements will get cancelled.)  
     for(int i=0;i<size;i++){
         ans^=arr[i];
     }
