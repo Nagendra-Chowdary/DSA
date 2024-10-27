@@ -4,7 +4,7 @@ using namespace std;
  //we have to leave the last element untouched if the size of the 
     //array is odd.
 void swap_alternates(int arr[],int size){
-    size=(size/2)*2;
+    size=(size/2)*2; 
     //this will give us the even number for odd size(one less than the original size)
    
     for(int i=0;i<size;i+=2){
