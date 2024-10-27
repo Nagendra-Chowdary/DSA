@@ -11,7 +11,7 @@ void sort(int arr[],int size){
     //         j--;
     //     }
     //     if((arr[j]==1 ||arr[j]==0) && arr[i]==2){
-    //         swap(arr[i],arr[j]);
+    //         swap(arr[i],arr[j]); 
     //         i++;
     //         j--;
     //     }
