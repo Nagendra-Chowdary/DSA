@@ -12,7 +12,7 @@ int duplicateElement(int arr[],int size){
     //3(same elements will get cancelled.)  
     for(int i=0;i<size;i++){
         ans^=arr[i];
-    }
+    } 
     for(int i=1;i<size;i++){
         ans^=i;
     }
