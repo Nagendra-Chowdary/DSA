@@ -8,7 +8,7 @@ void pairSum(int arr[],int sum,int size){
             }
 
         }
-    }
+    } 
 }
 int main(){
    int arr[100]={1,2,3,4,5};
