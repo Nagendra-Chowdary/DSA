@@ -5,7 +5,7 @@ using namespace std;
 // some elements occur twice, we have to find those.
 void duplicates(int arr[], int size)
 {
-    // we have the range 1 and n-1 so every element in this array
+    // we have the range 1 and n-1 so every element in this array 
     // will be less than the size of the array. so that means that every element
     // in the array must also be an index for any other element in this array.
     // so we iterate through the loop, for every element e, we will make
