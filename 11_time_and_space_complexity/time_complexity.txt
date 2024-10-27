@@ -18,7 +18,7 @@ Given by big O notation.(a function of input length)
 -> Quadratic time=O(n^2)
 -> Logarithmic time = O(log n)
 -> Cubic time = O(n^3)
-
+ 
 time complexities in increasing order
 O(1)<O(logn)<O(n)<O(nlogn)<O(n^2)<O(n^3)<O(2^n)<O(n!)
 
