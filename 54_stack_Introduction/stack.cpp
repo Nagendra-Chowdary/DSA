@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
-
+//
+//We can implement two stacks in one array taking only one input size
+//and pushing in one stack from left to right and the other from right to left
+//we can also start second stack from middle of array but it will result in bad
+//space utilization
+//
 class stack{
   public:
   int *arr;
