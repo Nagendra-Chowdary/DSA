@@ -2,7 +2,17 @@
 #include<queue>
 #include<algorithm>
 using namespace std;
-
+class node{
+   public:
+   int data;
+   node* left;
+   node* next;
+   node(int d){
+    this->data=d;
+    this->left=NULL;
+    this->next=NULL;
+   }
+};
 
 
 class heap
@@ -112,44 +122,45 @@ void heapify(vector<int> arr,int n,int i){
 //need to include queue header file.
 
 
-//Merge given K sorted arrays
-class node{
-    public:
-    int data;
-    int i;
-    int j;
-    node(int data,int row,int col){
-        this->data=data;
-        i=row;
-        j=col;
-    }
-};
+//Merge given K sorted Linked Lists
+
 class compare{
     public:
     bool operator()(node* a,node* b){
         return a->data>b->data;
     }
 };
-vector<int> mergee(vector<vector<int>> arr,int k){
+node* mergee(vector<node*> arr,int k){
     priority_queue<node*,vector<node*>,compare> minHeap;
+    if(k==0){
+        return NULL;
+    }
    for(int i=0;i<k;i++){
-    node* temp=new node(arr[i][0],i,0);
-    minHeap.push(temp);
+       if(arr[i]!=NULL){
+        minHeap.push(arr[i]);
+       }
    }
-   vector<int> ans;
-   while(minHeap.size()>0){
-    node* temp=minHeap.top();
-    ans.push_back(temp->data);
-    minHeap.pop();
-    int i=temp->i;
-    int j=temp->j;
-    if(j+1<arr[i].size()){
-        node* next=new node(arr[i][j+1],i,j+1);
-        minHeap.push(next);
 
+ node* head=NULL;
+ node* tail=NULL;   
+   while(minHeap.size()>0){
+    node* top=minHeap.top();
+    minHeap.pop();
+      if(top->next!=NULL){
+            minHeap.push(top->next);
+        }
+    if(head==NULL){
+        head=top;
+        tail=top;
+     
+    }
+    else{
+        tail->next=top;
+        tail=top;
+      
     }
    }
-   return ans;
+   return head;
 }
 
 int main()
